@@ -3,8 +3,7 @@ import cv2
 import numpy as np
 import time
 
-# Load your trained model
-model = YOLO('best2.pt')
+model = YOLO('best.pt')
 
 # Base calibration measured at 1 m distance
 BASE_PIXELS_PER_CM = 10     # adjust after your 1 m calibration test
