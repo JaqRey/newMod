@@ -3,12 +3,12 @@ import cv2
 import numpy as np
 import time
 
-model = YOLO('best.pt')
+model = YOLO('best_model.pt')
 
 # Base calibration measured at 1 m distance
 BASE_PIXELS_PER_CM = 10     # adjust after your 1 m calibration test
 BASE_DISTANCE_M     = 1.0   # meters
-CONF_THRESHOLD      = 0.30  # real threshold for filtering detections
+CONF_THRESHOLD      = 0.50  # real threshold for filtering detections
 SAFE_SIZE_CM        = 25.4  # 10 inches = 25.4 cm
 
 cap = cv2.VideoCapture(0)
